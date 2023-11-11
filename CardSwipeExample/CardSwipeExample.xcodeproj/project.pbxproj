@@ -11,7 +11,7 @@
 		A2BE0BB229B352F7000F72A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BE0BB129B352F7000F72A2 /* ContentView.swift */; };
 		A2BE0BB429B352FA000F72A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2BE0BB329B352FA000F72A2 /* Assets.xcassets */; };
 		A2BE0BB729B352FA000F72A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2BE0BB629B352FA000F72A2 /* Preview Assets.xcassets */; };
-		A2BE0BBE29B3535F000F72A2 /* CardSwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BE0BBD29B3535F000F72A2 /* CardSwipeView.swift */; };
+		A2BE0BBE29B3535F000F72A2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BE0BBD29B3535F000F72A2 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +20,7 @@
 		A2BE0BB129B352F7000F72A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A2BE0BB329B352FA000F72A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2BE0BB629B352FA000F72A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A2BE0BBD29B3535F000F72A2 /* CardSwipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardSwipeView.swift; sourceTree = "<group>"; };
+		A2BE0BBD29B3535F000F72A2 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +53,9 @@
 		A2BE0BAE29B352F7000F72A2 /* CardSwipeExample */ = {
 			isa = PBXGroup;
 			children = (
-				A2BE0BBD29B3535F000F72A2 /* CardSwipeView.swift */,
-				A2BE0BAF29B352F7000F72A2 /* CardSwipeExampleApp.swift */,
+				A2BE0BBD29B3535F000F72A2 /* CardView.swift */,
 				A2BE0BB129B352F7000F72A2 /* ContentView.swift */,
+				A2BE0BAF29B352F7000F72A2 /* CardSwipeExampleApp.swift */,
 				A2BE0BB329B352FA000F72A2 /* Assets.xcassets */,
 				A2BE0BB529B352FA000F72A2 /* Preview Content */,
 			);
@@ -142,7 +142,7 @@
 			files = (
 				A2BE0BB229B352F7000F72A2 /* ContentView.swift in Sources */,
 				A2BE0BB029B352F7000F72A2 /* CardSwipeExampleApp.swift in Sources */,
-				A2BE0BBE29B3535F000F72A2 /* CardSwipeView.swift in Sources */,
+				A2BE0BBE29B3535F000F72A2 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

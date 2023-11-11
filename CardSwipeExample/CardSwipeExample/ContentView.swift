@@ -64,6 +64,14 @@ struct ContentView: View {
         }
     }
   
+  private func onSwipeLeft(_ tagId: UUID) {
+    debugPrint("onSwipeLeft: \(tagId)")
+  }
+  
+  private func onSwipeRight(_ tagId: UUID) {
+    debugPrint("onSwipeRight: \(tagId)")
+  }
+  
   private func updateCard(_ card: Card) -> some View {
     card
       .animation(.spring(), value: UUID())
@@ -74,16 +82,69 @@ struct ContentView: View {
   
   private func loadCards() {
     cards = [
-      CardView(index: 0, tagId: UUID(), content: { ExampleCardView() }),
-      CardView(index: 1, tagId: UUID(), content: { ExampleCardView() }),
-      CardView(index: 2, tagId: UUID(), content: { ExampleCardView() }),
-      CardView(index: 3, tagId: UUID(), content: { ExampleCardView() })
+      CardView(
+        index: 0,
+        tagId: UUID(),
+        swipedLeft: onSwipeLeft(_:),
+        swipedRight: onSwipeRight(_:),
+        content: { ExampleCardView() }
+      ),
+      CardView(
+        index: 1,
+        tagId: UUID(),
+        swipedLeft: onSwipeLeft(_:),
+        swipedRight: onSwipeRight(_:),
+        content: { ExampleCardView() }
+      ),
+      CardView(
+        index: 2,
+        tagId: UUID(),
+        swipedLeft: onSwipeLeft(_:),
+        swipedRight: onSwipeRight(_:),
+        content: { ExampleCardView() }
+      ),
+      CardView(
+        index: 3,
+        tagId: UUID(),
+        swipedLeft: onSwipeLeft(_:),
+        swipedRight: onSwipeRight(_:),
+        content: { ExampleCardView() }
+      ),
+      CardView(
+        index: 4,
+        tagId: UUID(),
+        swipedLeft: onSwipeLeft(_:),
+        swipedRight: onSwipeRight(_:),
+        content: { ExampleCardView() }
+      ),
+      CardView(
+        index: 5,
+        tagId: UUID(),
+        swipedLeft: onSwipeLeft(_:),
+        swipedRight: onSwipeRight(_:),
+        content: { ExampleCardView() }
+      ),
+      CardView(
+        index: 6,
+        tagId: UUID(),
+        swipedLeft: onSwipeLeft(_:),
+        swipedRight: onSwipeRight(_:),
+        content: { ExampleCardView() }
+      ),
+      CardView(
+        index: 7,
+        tagId: UUID(),
+        swipedLeft: onSwipeLeft(_:),
+        swipedRight: onSwipeRight(_:),
+        content: { ExampleCardView() }
+      ),
+      CardView(
+        index: 8,
+        tagId: UUID(),
+        swipedLeft: onSwipeLeft(_:),
+        swipedRight: onSwipeRight(_:),
+        content: { ExampleCardView() }
+      )
     ]
   }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-      ContentView(cards: [])
-    }
 }
