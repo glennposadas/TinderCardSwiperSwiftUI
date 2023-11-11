@@ -66,10 +66,25 @@ struct ContentView: View {
   
   private func onSwipeLeft(_ tagId: UUID) {
     debugPrint("onSwipeLeft: \(tagId)")
+    shouldResetCards(tagId)
   }
   
   private func onSwipeRight(_ tagId: UUID) {
     debugPrint("onSwipeRight: \(tagId)")
+    shouldResetCards(tagId)
+  }
+  
+  // Check if we are on the last card.
+  private func shouldResetCards(_ tagId: UUID) {
+    // Get the last uuid
+    guard let lastUUID = cards.last?.tagId else {
+      return
+    }
+    
+    if tagId == lastUUID {
+      debugPrint("Last card reached. Resetting...")
+      loadCards()
+    }
   }
   
   private func updateCard(_ card: Card) -> some View {
